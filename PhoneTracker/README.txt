@@ -1,0 +1,1 @@
+dato un numero ti rida la citta, operatore e nazione (ma molto generico)
