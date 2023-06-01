@@ -1,25 +1,4 @@
-function handleGoogleLogin(response) {
-    // Ottieni le informazioni sull'utente dal token di accesso
-    var profile = response.getBasicProfile();
-    var username = profile.getEmail(); // Puoi usare l'email come username
-  
-    // Esegui il redirect o esegui altre azioni per il login con Google
-    // Esempio: window.location.href = "tua_pagina.html";
-  }
-  
-  function renderGoogleLoginButton() {
-    gapi.signin2.render('google-login-button', {
-      'scope': 'profile email',
-      'width': 240,
-      'height': 50,
-      'longtitle': true,
-      'theme': 'dark',
-      'onsuccess': handleGoogleLogin
-    });
-  }
-  document.addEventListener("DOMContentLoaded", function() {
-    renderGoogleLoginButton();
-  });
+
 mapboxgl.accessToken = 'pk.eyJ1IjoiYWx2ZXNpc2gtOTkiLCJhIjoiY2xpZDFtc2syMDJwbzNycWpzd3RhcmJuMiJ9.G-MF29TIZj_djR2kOFCkgQ';
 
 function getLocation() {
